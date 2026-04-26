@@ -123,8 +123,8 @@ def format_output(reports: list[dict], client, token):
 def main():
     parser = argparse.ArgumentParser(description="Fetch Notion Daily Reports for meeting prep")
     parser.add_argument("-d", "--days", type=int, default=30, help="Number of past days to fetch (default: 30)")
-    parser.add_argument("-p", "--people", nargs="+", default=["Lukas", "Marián", "Martin"],
-                        help="People to filter by (substring match, default: Lukas Marián Martin)")
+    parser.add_argument("-p", "--people", nargs="+", default=["Teo", "Marián", "Lukas"],
+                        help="People to filter by (substring match, default: Teo Marián Lukas)")
     args = parser.parse_args()
 
     token = get_token()
